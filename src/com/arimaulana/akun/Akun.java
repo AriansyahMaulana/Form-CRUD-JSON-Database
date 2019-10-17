@@ -17,7 +17,6 @@ package com.arimaulana.akun;
 
 import com.arimaulana.akun.enums.Config;
 import com.arimaulana.akun.view.FormLogin;
-import com.arimaulana.crudjson.utils.Utils;
 
 /**
  *
@@ -29,12 +28,7 @@ public class Akun {
         //221110000356666211110087999999
         Config.setPATH_DATABASE("database/");
         Config.setSECRET_KEY("221110000356666211110087");
-        
-        String userEncrypt = "RrIwFE7pH0ZkrdPqrLGME4zbLpuzC2OVqWROj8ScunaDfDPPyRYGlIuNP6BPh2ba9B4IC2vzzIua4XbA5hHrnrY4jPmYCAjyavU22tJUDa8w8zNVw/BW0oq1lN1gDWSEoGaVL20nTOE=";
-        String userDcrypt = "{\"User\":[{\"id\":1,\"username\":\"ari\",\"password\":\"ari\"},{\"id\":2,\"username\":\"ridwan\",\"password\":\"ridwan\"}]}";
-        System.out.println(Utils.decrypData(userEncrypt));
-        System.out.println(Utils.encrypData(userDcrypt));
-        
+       
         new FormLogin().setVisible(true);
     
     }
